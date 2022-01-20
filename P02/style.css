@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,nav {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+body {
+    font-family:"Lato";
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+}
+h2 {
+    font-family: "Sansita Swashed";
+    font-size: 3rem;
+    font-weight: 500;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: .3rem;
+}
+h2:after {
+    display: block;
+    height: 1px;
+    background-color: #aca9a93b;
+    content: '';
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0.5rem;
+} 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 0 black;
+}
+
+
+
+
+/* header section */
+.header__bg img {
+    position: fixed;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+}
+.header__title {
+    justify-content: flex-start;
+    margin: 2rem 2rem;
+}
+.header__title h1 {
+    font-family: "Sansita Swashed";
+    font-size: 5rem;
+    font-weight: 900;
+}
+.header__title h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color:  #e0dddd;
+}
+.header__nav {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    margin-top: 3.5rem;
+    margin-right: 2.5rem;
+    
+}
+.header__nav ul{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.header__nav li{
+    padding-right: 2rem;
+    font-size: 1rem;
+    transition: 0.5s color;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: "Sansita Swashed";
+}
+.header__nav li:hover {
+    color: 	#545218;
+}
+
+@media(max-width:970px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+       
+    }
+}
+/* end of header section */
+
+
+
+
+/* banner section */
+.banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+}
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+/* end of banner section */
+
+
+
+/* About us section */
+.about__title {
+    height: 19rem;
+    padding: 80px 0;
+    background-color: #fff;
+}
+.about__title h2 {
+    color: black;
+}
+
+.about__content {
+    background-color: #d3d3d3;
+    padding: 80px;
+}
+.about__content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+    line-height: 2rem;
+}
+/* End of About us section */
+
+
+
+
+/* Services Section */
+.services {
+    background-color: #1e1f23;
+}
+.services__title {
+    position: relative;
+    padding: 80px 0;
+    top: 60px;
+    background-color: #121315; 
+}
+.services__title h4 {
+    color: #ecececbd;
+}
+.only__services {
+    padding-bottom: 130px;
+}
+
+.services__items {
+    position: relative; 
+    top: 60px;
+}
+.services__items ul {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.services__items ul li img {
+    width: 100%;
+    transform: scale(1.075);
+    opacity: 1;
+    transition: 0.7s all;
+}
+.services__items ul li img:hover {
+    transform: scale(1);
+    opacity: 0.3;
+}
+
+
+@media (max-width:970px) {  
+    .services__items ul {
+        flex-direction: column;
+    }
+}
+/*End of Services Section */
+
+
+
+
+/* Review Section */
+.review__title {
+    padding: 80px 0;
+}
+.review__title h4 {
+    color: white;
+}
+
+.review__items ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.review__item ul li {
+    width: 100%;
+}
+.review__item ul li img {
+    width: 100%;
+}
+.review__item-content {
+    background-color: #1e1f23;
+    width: 100%;
+    padding: 50px;
+    padding-top: 80px;
+}
+.review__item-content p {
+    color:#b3b3b3;
+    font-size: 1rem;
+    font-family: "Lato";
+    font-weight: 400;
+    padding-top: 2rem;
+    line-height: 2rem;
+    letter-spacing: .3rem;
+    
+}
+.review__item-content h4 {
+    color: white
+}
+
+
+@media (max-width:1230px) {
+    .review__items ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+/* End of Review Section */
+
+
+
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+
+.footer h2 {
+    color: white;
+}
+
+.footer .brand h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.footer .brand h1 span {
+    color: crimson;
+}
+
+.footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer .social-icon {
+    margin: 0 1rem;
+}
+
+.footer .social-icon img {
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: 0.3s all;
+}
+
+.footer .social-icon img:hover {
+    filter: grayscale(0);
+    transform: scale(0.9);
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media (max-width:1230px) {
+
+    .social-icon img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+/* End of Footer Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
